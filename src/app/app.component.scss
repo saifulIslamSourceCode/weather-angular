@@ -1,0 +1,24 @@
+
+/* Make the video cover the entire screen and fixed */
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;       /* full viewport width */
+  height: 100vh;      /* full viewport height */
+  object-fit: cover;  /* cover the area, cropping if needed */
+  z-index: -1;        /* put behind other elements */
+}
+
+/* Content container styles */
+.content {
+  position: relative; /* make sure content is above video */
+  z-index: 1;
+  color: white;       /* text color for visibility */
+  padding: 2rem;
+  /* Optional: add background overlay for readability */
+  background-color: rgba(0, 0, 0, 0.4);
+  max-width: 600px;
+  margin: 100px auto;
+  border-radius: 8px;
+}

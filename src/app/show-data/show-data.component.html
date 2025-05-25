@@ -1,0 +1,30 @@
+<div class="search-container form-group">
+    <input type="text" class="search-input form-control" placeholder="Search City">
+    <button class="btn btn-secondary">Search</button>
+</div>
+
+<!-- show temp -->
+<div class="row margin-top">
+
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Current Temperature</h5>
+        <h1 class="card-title">{{ 30 | temperature:'C' }}</h1>
+        <h1 class="card-title">{{ 30 | temperature:'F' }}</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Expected Temperature</h5>
+        <h5 class="card-title">Day {{ 32 | temperature:'C'}}, <br> Night {{ 32 | temperature:'C'}}</h5>
+        <h5 class="card-title">Humidity: {{ 30 }}%</h5>
+        <h5 class="card-title">Wind: {{ 3 }}km/h</h5>
+      </div>
+    </div>
+  </div>
+
+</div>
